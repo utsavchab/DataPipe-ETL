@@ -35,7 +35,7 @@ This project utilizes dynamic data, which closely resembles to real-world data g
 ## Pipelines to peform ETL (Extract, Transform, Load) on the Data.
 
 ### Pipeline 1: User Signup Summary
-![Pipeline 1](./images/pipeline-1.png)
+![Pipeline1](images/pipeline-1.png)
 
 This pipeline focuses on summarizing user signup data from the e-commerce website. It extracts relevant information, transforms it into a meaningful format, and loads it for further analysis and reporting.
 
@@ -43,7 +43,7 @@ This pipeline focuses on summarizing user signup data from the e-commerce websit
 1. Extraction: 
    - Retrieve user signup data from the e-commerce website's database or relevant data sources.
    ### "users" table schema
-    ![users Table](./images/users%20table.png)
+    ![users_Table](images/users%20table.png)
 
 
 2. Transformation: 
