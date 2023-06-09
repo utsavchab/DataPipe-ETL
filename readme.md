@@ -8,12 +8,7 @@ In this project a advanced library named "generate_data_library" is created to g
 **Database Name:** website
 
 The `website` database consists of the following tables:
-- users
-- signup_summary
-- transaction
-- transaction_summary
-- refund_detail
-- valid_refund
+![website_database](images/all_tables.png)
 
 ## Dataset Containing Products Information
 **Name of the CSV file:** products_table.csv
