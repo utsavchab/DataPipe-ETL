@@ -38,14 +38,15 @@ This pipeline focuses on summarizing user signup data from the e-commerce websit
 #### 1. Extraction: 
    - Retrieve user signup data from the e-commerce website's database or relevant data sources.
    #### "users" table schema
-   ![users_Table](images/users%20table.png)
+   ![users_Table](images/user_table_data.jpg)
 
 
 #### 2. Transformation: 
    - Perform data cleaning and preprocessing.
    - Apply aggregations or calculations to derive meaningful insights.
    - Generate a summarized view of the user signup data.
-   -
+   #### Transformed Data
+   ![summary_table](images/user_summary_table.jpg)
 
 #### 3. Load: 
    - Store the processed and summarized data in a suitable format (e.g., a database, CSV file, or data warehouse).
