@@ -8,7 +8,7 @@ In this project a advanced library named "generate_data_library" is created to g
 **Database Name:** website
 
 ### The `website` database consists of the following tables:
-![website_database](images/all_tables.jpg)
+<img src = "images/all_tables.jpg" height = "300px" width = "400px"></img>
 
 ## CSV Dataset Containing Products Information
 **Name of the CSV file:** products_table.csv <br />
@@ -30,7 +30,7 @@ This project utilizes dynamic data, which closely resembles to real-world data g
 ## Pipelines to peform ETL (Extract, Transform, Load) on the Data.
 
 ### Pipeline 1: User Signup Summary
-![Pipeline1](images/pipeline-1.png)
+<p align = "center"><img src = "images/pipeline-1.png" height = "300px"></img></p>
 
 This pipeline focuses on summarizing user signup data from the e-commerce website. It extracts relevant information, transforms it into a meaningful format, and loads it for further analysis and reporting.
 
