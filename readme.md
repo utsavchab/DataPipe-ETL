@@ -11,7 +11,7 @@ In this project a advanced library named "generate_data_library" is created to g
 ![website_database](images/all_tables.jpg)
 
 ## Dataset Containing Products Information
-**Name of the CSV file:** products_table.csv
+**Name of the CSV file:** products_table.csv <br />
 **Location of the CSV file:** "dataset/products_table.csv"
 
 ## Dynamic Data Generation
