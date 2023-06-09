@@ -40,18 +40,18 @@ This project utilizes dynamic data, which closely resembles to real-world data g
 This pipeline focuses on summarizing user signup data from the e-commerce website. It extracts relevant information, transforms it into a meaningful format, and loads it for further analysis and reporting.
 
 ### Components and Steps:
-1. Extraction: 
+#### 1. Extraction: 
    - Retrieve user signup data from the e-commerce website's database or relevant data sources.
-   ### "users" table schema
+   #### "users" table schema
     ![users_Table](images/users%20table.png)
 
 
-2. Transformation: 
+#### 2. Transformation: 
    - Perform data cleaning and preprocessing.
    - Apply aggregations or calculations to derive meaningful insights.
    - Generate a summarized view of the user signup data.
 
-3. Load: 
+#### 3. Load: 
    - Store the processed and summarized data in a suitable format (e.g., a database, CSV file, or data warehouse).
    - Ensure appropriate indexing or organization for efficient retrieval and analysis.
 
