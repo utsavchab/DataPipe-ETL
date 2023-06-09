@@ -7,7 +7,7 @@ In this project a advanced library named "generate_data_library" is created to g
 ## Database Schema
 **Database Name:** website
 
-The `website` database consists of the following tables:
+### The `website` database consists of the following tables:
 ![website_database](images/all_tables.jpg)
 
 ## Dataset Containing Products Information
