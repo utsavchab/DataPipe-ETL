@@ -1,0 +1,11 @@
+mysql-connector-python
+pandas
+numpy
+datetime
+schedule
+time
+random
+uuid
+logging
+multiprocessing
+multithreading
