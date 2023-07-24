@@ -4,13 +4,10 @@ import time
 import random
 import uuid
 import pandas as pd
-import mysql.connector as mysql
-
-
 
 
 # %%
-# Define the function to generate refund requests.
+# function to generate refund requests.
 def generate_all_refund(transactions):
     # randomly generating the ticket id using uuid
     ticket_id = "TICKET-" + str(uuid.uuid4())
@@ -18,20 +15,18 @@ def generate_all_refund(transactions):
     # selecting any random transaction id from the transaction id list
     random_index = random.randint(0,len(transactions)-1)
     transaction_id = transactions[random_index][0]
+    transaction_amount = transactions[random_index][1]
     
     # creating a random user name of 5 characters
     user_name  = str(''.join(random.choices("ABC",k=1))) + str(''.join(random.choices("ibruegbieiurgeriuger", k = 4)))
     
-    # creating a random transaction amount
-    transaction_amount = transactions[random_index][1]
     refund_status = "NEW"
     
     # current time as the ticket raise time
     ticket_raise_time = str(pd.datetime.now())
     
     # Adding error in 20 percent of the refund request.
-    # if the random error is 1, then it is a valid request
-    # else if the random error is 0, then it is an invalid request
+
     random_error = random.choice([1,1,1,1,0])
     
     # if the random error is 0, then manipulate the transaction id
@@ -43,7 +38,8 @@ def generate_all_refund(transactions):
     
     # return the values
     return ticket_id, user_name, transaction_id, transaction_amount, ticket_raise_time
-    
+
+#%% 
 
 
 # %%

@@ -6,13 +6,11 @@ from generate_data_library import generate_user
 import subprocess
 import threading
 
-# Define a flag variable
 
 class install_req_libraries():
     def __new__(cls):
         cmd_run = subprocess.run(["powershell","-Command","pip install -r requirements.txt"],capture_output=True)
         print(cmd_run.stdout.decode("utf-8"))
-        # return os.std
         
 class get_database:
     def __new__(cls,dataB):

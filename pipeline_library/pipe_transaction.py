@@ -103,15 +103,16 @@ def pipeline_to_update_transaction_summary(db,product_data):
     print("\n==================================Loading Transaction Data====================================")
     current_time = datetime.datetime.now()
     current_minus_10 = current_time - datetime.timedelta(minutes=10)
-    # E
+    
+    # Extract
     latest_transaction_data = extract_transaction_data(db=db,
                                                        start_time = current_minus_10,
                                                        end_time = current_time)
     
-    # T
+    # Transform
     summarized_data = transform_transaction_data(latest_transaction_data,product_data,current_minus_10,current_time)
     
-    # L
+    # Load
     load_transaction_summary(db,summarized_data)
     print("====================================Load Success=========================================\n")
     

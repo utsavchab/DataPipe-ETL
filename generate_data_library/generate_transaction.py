@@ -5,18 +5,17 @@ import time
 import random
 import uuid
 import pandas as pd
-import mysql.connector as mysql
 
 
 
 
 # %%
-#Defining a function to Generate New Transactions.
+#function to Generate New Transactions.
 
 def generate_new_transaction(users,products_table):
     
     # generating random transaction id
-    transaction_id = "TI-"+str(uuid.uuid4())
+    transaction_id = "TI-" + str(uuid.uuid4())
     
     # selecting a random user id 
     user_id = users[random.randint(0,len(users))][0]
@@ -41,9 +40,8 @@ def generate_transaction_data(db,products_table):
         command = "SELECT user_id FROM users"
         cursor.execute(command)
         users = cursor.fetchall() 
+        
         # creating the new random transaction
-        # a time is selected randomly upto 4 seconds and transction row will be added.
-        # after 25 transactions, again all the users list will be updated.
         for i in range(25):
             command = "INSERT INTO transaction values" + str(generate_new_transaction(users,products_table))
             cursor.execute(command)

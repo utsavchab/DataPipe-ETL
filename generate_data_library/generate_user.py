@@ -5,8 +5,6 @@ import time
 import random
 import uuid
 import pandas as pd
-import mysql.connector as mysql
-import logging
 
 # %%
 # defining the function generate_new_row

@@ -134,18 +134,16 @@ def pipeline_to_validate_refund_request(db):
     current_time = str(current_time)
     current_time_30 = str(current_time_30)
     current_time_48 = str(current_time_48)
-    ##Extraction
+    
+    #Extraction
     transaction_data = extract_transaction_data(db, current_time_48, current_time)
-    
     refund_request_data = extract_refund_data(db,current_time_30,current_time)
-    
     refund_issued_TID = extract_valid_refund_data(db,current_time_48,current_time)
     
-    ##Transformation
-    # transformed_transaction_data = 
+    #Transformation
     refund_request_notissued,invalid_request = transform_refund_data(refund_request_data,refund_issued_TID,transaction_data)
     
-
+    #Load
     load_valid_refund_data(db,refund_request_notissued)
     load_invalid_refund_data(invalid_request)
     print("====================================Load Success=========================================\n")
